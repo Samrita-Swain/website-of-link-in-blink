@@ -19,7 +19,10 @@ const Hero = () => {
         </div>
         </div>
         <div data-aos='zoom-in' className='w-[500px] bg-[#87289a] relative lg:flex items-center rounded-full h-[500px] hidden'>
-          <Image src="/images/home.jpg" alt="user" layout="fill" className="object-cover rounded-full"/>
+          <Image  src="/images/home.jpg"
+  fill // Replace layout="responsive" with fill
+  style={{ objectFit: 'cover' }} // Set objectFit in style
+  alt="Home" className="object-cover rounded-full"/>
         </div>
       </div>
     </div>
